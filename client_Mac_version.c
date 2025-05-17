@@ -4,11 +4,9 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
-// The client should try to send a WebService json msg to the client...
-// WebService request uses HTTP explained in lecture 8...
-// String constants ROW1 to 6 below must be populated with the
-// right content to create a well formed WebService request!
+
 // Remember that each row must end with \r\n according to the HTTP protocol.
+
 #define ROW1 "POST /AndersCajander HTTP/1.1\r\n"
 #define ROW2 " Host: [Change here! Your peer ip address will go here]:8080\r\n"
 #define ROW3 " Content-Type: application/json\r\n"
